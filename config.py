@@ -1,7 +1,7 @@
 import os
 
-TELEGRAM_TOKEN = '766379120:AAE_vH5kMUgGwMpoxgDK1vmOOcebeX69Pfc'
-CHAT_ID = '-413959477'
+TELEGRAM_TOKEN = os.environ.get('TELEGRAM_TOKEN', '')
+CHAT_ID = os.environ.get('CHAT_ID', '')
 
 if not TELEGRAM_TOKEN or not CHAT_ID:
     raise Exception('TELEGRAM_TOKEN, CHAT_ID 확인필요')
