@@ -1,1 +1,1 @@
-# coronabook
+# coronabook_bot
